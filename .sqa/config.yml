@@ -2,7 +2,7 @@ config:
   credentials: []
   project_repos:
     github.com/EOSC-synergy/sqaaas-tooling:
-      branch: release/1.7.7
+      branch: fix/updatego
       repo: https://github.com/EOSC-synergy/sqaaas-tooling
     github.com/openaire/EPrints-OAPiwik:
       branch: master
@@ -15,32 +15,32 @@ sqa_criteria:
     repos:
       github.com/openaire/EPrints-OAPiwik git:
         commands:
-        - /usr/bin/env sh .sqa/script.breezy-turquoise-okapi.sh
-        container: qc.acc_goopy-copper-mouse
+        - /usr/bin/env sh .sqa/script.cinnabar_perky_cassowary.sh
+        container: qc.acc_pumpkin_meticulous_chameleon
   QC.Doc:
     repos:
       github.com/openaire/EPrints-OAPiwik find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.sickly-maroon-numbat.sh
-        container: qc.doc_dorky-maroon-blue
+        - /usr/bin/env sh .sqa/script.goldenrod_tactful_antelope.sh
+        container: qc.doc_clove_perky_catfish
       github.com/openaire/EPrints-OAPiwik git:
         commands:
-        - /usr/bin/env sh .sqa/script.surly-auburn-macaque.sh
-        container: qc.doc_goopy-myrtle-shark
+        - /usr/bin/env sh .sqa/script.cayenne_resourceful_mink.sh
+        container: qc.doc_marina_candid_porpoise
       github.com/openaire/EPrints-OAPiwik markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.nerdy-green-squid.sh
-        container: qc.doc_goopy-cobalt-bulldog
+        - /usr/bin/env sh .sqa/script.glaucous_ambitious_heron.sh
+        container: qc.doc_forest_understanding_dolphin
   QC.Lic:
     repos:
       github.com/openaire/EPrints-OAPiwik licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.clammy-brown-goat.sh
-        container: qc.lic_cranky-indigo-molly
+        - /usr/bin/env sh .sqa/script.snow_tolerant_lobster.sh
+        container: qc.lic_thunder_humorous_reindeer
   QC.Ver:
     repos:
       github.com/openaire/EPrints-OAPiwik get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.droopy-cinnabar-neanderthal.sh
-        container: qc.ver_nerdy-amber-gerbil
+        - /usr/bin/env sh .sqa/script.goldenrod_joyful_chinchilla.sh
+        container: qc.ver_isabelline_spontaneous_pelican
 timeout: 5400
