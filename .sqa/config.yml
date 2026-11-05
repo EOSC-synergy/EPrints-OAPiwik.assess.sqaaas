@@ -15,32 +15,32 @@ sqa_criteria:
     repos:
       github.com/openaire/EPrints-OAPiwik git:
         commands:
-        - /usr/bin/env sh .sqa/script.turmeric_zany_manta.sh
-        container: qc.acc_cardamom_carefree_boa
+        - /usr/bin/env sh .sqa/script.pistachio_polite_hamster.sh
+        container: qc.acc_ginger_flexible_eagle
   QC.Doc:
     repos:
       github.com/openaire/EPrints-OAPiwik find_doc_files.py:
         commands:
-        - /usr/bin/env sh .sqa/script.ice_grateful_vulture.sh
-        container: qc.doc_alabaster_brilliant_elephant
+        - /usr/bin/env sh .sqa/script.zinnia_hopeful_hawk.sh
+        container: qc.doc_dusk_candid_angelfish
       github.com/openaire/EPrints-OAPiwik git:
         commands:
-        - /usr/bin/env sh .sqa/script.ginger_humble_eagle.sh
-        container: qc.doc_cobalt_resilient_otter
+        - /usr/bin/env sh .sqa/script.cloud_supportive_albatross.sh
+        container: qc.doc_persimmon_hopeful_iguana
       github.com/openaire/EPrints-OAPiwik markdownlint:
         commands:
-        - /usr/bin/env sh .sqa/script.boysenberry_pensive_ibex.sh
-        container: qc.doc_byzantium_stoic_dhole
+        - /usr/bin/env sh .sqa/script.amethyst_spirited_ibis.sh
+        container: qc.doc_ultramarine_patient_bison
   QC.Lic:
     repos:
       github.com/openaire/EPrints-OAPiwik licensee:
         commands:
-        - /usr/bin/env sh .sqa/script.orchid_reliable_newt.sh
-        container: qc.lic_rust_funny_hamster
+        - /usr/bin/env sh .sqa/script.grape_tough_porcupine.sh
+        container: qc.lic_chartreuse_relaxed_tarantula
   QC.Ver:
     repos:
       github.com/openaire/EPrints-OAPiwik get_git_tags.py:
         commands:
-        - /usr/bin/env sh .sqa/script.olive_skeptical_cobra.sh
-        container: qc.ver_paprika_cranky_nymph
+        - /usr/bin/env sh .sqa/script.claret_decisive_wildcat.sh
+        container: qc.ver_plum_bold_donkey
 timeout: 5400
